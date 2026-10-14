@@ -1,0 +1,6 @@
+Bibliotecas a serem instaladas
+
+flutter pub add http
+flutter pub add file_picker
+flutter pub add open_filex
+flutter pub add path_provider

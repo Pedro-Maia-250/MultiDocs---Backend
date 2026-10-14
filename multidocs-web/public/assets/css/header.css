@@ -1,0 +1,65 @@
+.header {
+    background: white;
+    height: 80px;
+    padding: 0 30px;
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.user-data strong {
+    color: #111827;
+    font-size: 14px;
+}
+
+.user-data span {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #1e3a8a;
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-btn {
+    background: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #b91c1c;
+}

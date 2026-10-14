@@ -1,0 +1,424 @@
+/* =========================================
+   MULTIDOCS - MEUS DOCUMENTOS
+========================================= */
+
+.documentos-page {
+    width: 100%;
+    color: #0f172a;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.documentos-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+    margin-bottom: 26px;
+}
+
+.documentos-heading h1 {
+    margin: 0 0 6px;
+
+    color: #0f172a;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.documentos-heading p {
+    margin: 0;
+
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.btn-documentos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+    padding: 10px 15px;
+
+    border: 1px solid transparent;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.btn-documentos i {
+    font-size: 15px;
+}
+
+.btn-mesclar {
+    background-color: #ffffff;
+    color: #0f172a;
+    border-color: #cbd5e1;
+
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+.btn-mesclar:hover {
+    background-color: #f1f5f9;
+    border-color: #94a3b8;
+}
+
+
+/* =========================================
+   GRADE DE DOCUMENTOS
+========================================= */
+
+.documentos-grid {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(min(100%, 270px), 1fr)
+    );
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   CARTÃO
+========================================= */
+
+.documento-card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    padding: 20px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d8e0eb;
+    border-radius: 12px;
+
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.documento-card:hover {
+    border-color: #bdcde0;
+
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.07);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   PARTE SUPERIOR DO CARTÃO
+========================================= */
+
+.documento-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.documento-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background-color: #eff6ff;
+    color: #17417c;
+
+    border: 1px solid #dbeafe;
+    border-radius: 9px;
+}
+
+.documento-icon i {
+    font-size: 23px;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.documento-status {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+    padding: 6px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status-indicator {
+    width: 7px;
+    height: 7px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+}
+
+.status-enviado {
+    background-color: #ecfdf5;
+    color: #047857;
+}
+
+.status-enviado .status-indicator {
+    background-color: #10b981;
+}
+
+.status-pendente {
+    background-color: #f1f5f9;
+    color: #64748b;
+}
+
+.status-pendente .status-indicator {
+    background-color: #94a3b8;
+}
+
+
+/* =========================================
+   INFORMAÇÕES
+========================================= */
+
+.documento-info {
+    margin-bottom: 18px;
+}
+
+.documento-info h2 {
+    margin: 0 0 8px;
+
+    color: #0f172a;
+
+    font-size: 16px;
+    font-weight: 650;
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+}
+
+.documento-tipo {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.documento-tipo span {
+    color: #334155;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   DATA
+========================================= */
+
+.documento-data {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 8px;
+    padding: 13px 0;
+
+    margin-top: auto;
+
+    border-top: 1px solid #edf1f6;
+
+    color: #64748b;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+}
+
+.documento-data i {
+    margin-top: 1px;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   AÇÕES
+========================================= */
+
+.documento-actions {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+    margin-top: 3px;
+}
+
+.documento-actions .btn-documentos {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn-visualizar {
+    background-color: #163e78;
+    color: #ffffff;
+}
+
+.btn-visualizar:hover {
+    background-color: #123260;
+    box-shadow: 0 2px 5px rgba(22, 62, 120, 0.18);
+}
+
+.btn-enviar {
+    background-color: #ffffff;
+    color: #163e78;
+
+    border-color: #cbd5e1;
+}
+
+.btn-enviar:hover {
+    background-color: #eff6ff;
+    border-color: #93b4df;
+}
+
+
+/* =========================================
+   ESTADO VAZIO
+========================================= */
+
+.documentos-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 230px;
+    padding: 35px 20px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d8e0eb;
+    border-radius: 12px;
+
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.documentos-empty .empty-icon {
+    margin-bottom: 16px;
+
+    color: #64748b;
+    font-size: 42px;
+}
+
+.documentos-empty h2 {
+    margin: 0 0 9px;
+
+    color: #0f172a;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.documentos-empty p {
+    max-width: 380px;
+    margin: 0;
+
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .documentos-header {
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        gap: 15px;
+        margin-bottom: 22px;
+    }
+
+    .documentos-heading {
+        width: 100%;
+    }
+
+    .documentos-heading h1 {
+        font-size: 21px;
+    }
+
+    .documentos-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .documento-card {
+        padding: 17px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .documentos-header {
+        gap: 12px;
+    }
+
+    .btn-documentos {
+        font-size: 12px;
+    }
+
+}

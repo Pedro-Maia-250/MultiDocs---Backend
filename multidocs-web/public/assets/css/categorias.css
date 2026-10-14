@@ -1,0 +1,402 @@
+/* =========================================
+   MULTIDOCS - TIPOS DE DOCUMENTOS
+========================================= */
+
+.categoria-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+
+    color: #0f172a;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.categoria-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 26px;
+}
+
+.categoria-header h1 {
+    margin: 0 0 6px;
+
+    color: #0f172a;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.categoria-header p {
+    margin: 0;
+
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CARTÃO DO FORMULÁRIO
+========================================= */
+
+.categoria-card {
+    overflow: hidden;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d8e0eb;
+    border-radius: 12px;
+
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================================
+   CABEÇALHO DO CARTÃO
+========================================= */
+
+.categoria-card-header {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+    padding: 21px 24px;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e8edf4;
+}
+
+.categoria-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background-color: #eff6ff;
+    color: #17417c;
+
+    border: 1px solid #dbeafe;
+    border-radius: 9px;
+}
+
+.categoria-icon i {
+    font-size: 21px;
+}
+
+.categoria-card-heading h2 {
+    margin: 0 0 5px;
+
+    color: #0f172a;
+    font-size: 16px;
+    font-weight: 650;
+}
+
+.categoria-card-heading p {
+    margin: 0;
+
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   CORPO DO CARTÃO
+========================================= */
+
+.categoria-card-body {
+    padding: 26px 24px;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.categoria-form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.categoria-form-group label {
+    color: #334155;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.campo-obrigatorio {
+    color: #dc2626;
+}
+
+.categoria-input {
+    width: 100%;
+    min-height: 45px;
+
+    padding: 11px 13px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+
+    color: #0f172a;
+
+    font-family: inherit;
+    font-size: 13px;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.categoria-input::placeholder {
+    color: #94a3b8;
+}
+
+.categoria-input:hover {
+    border-color: #94a3b8;
+}
+
+.categoria-input:focus {
+    border-color: #315f9b;
+
+    box-shadow: 0 0 0 3px rgba(49, 95, 155, 0.12);
+}
+
+.categoria-ajuda {
+    color: #64748b;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.categoria-acoes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.categoria-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 41px;
+    padding: 10px 15px;
+
+    border: 1px solid transparent;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.categoria-btn i {
+    font-size: 14px;
+}
+
+
+/* Botão principal */
+
+.categoria-btn-primary {
+    background-color: #163e78;
+    color: #ffffff;
+}
+
+.categoria-btn-primary:hover {
+    background-color: #123260;
+
+    box-shadow: 0 2px 5px rgba(22, 62, 120, 0.15);
+}
+
+
+/* Botão secundário */
+
+.categoria-btn-secondary {
+    background-color: #ffffff;
+
+    border-color: #cbd5e1;
+    color: #334155;
+}
+
+.categoria-btn-secondary:hover {
+    background-color: #f1f5f9;
+    border-color: #94a3b8;
+}
+
+
+/* Foco para navegação por teclado */
+
+.categoria-btn:focus-visible {
+    outline: 3px solid rgba(49, 95, 155, 0.3);
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   MENSAGENS
+========================================= */
+
+.categoria-alerta {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+    padding: 13px 15px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.categoria-alerta i {
+    margin-top: 1px;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.alerta-sucesso {
+    background-color: #ecfdf5;
+    border-color: #a7f3d0;
+    color: #047857;
+}
+
+.alerta-erro {
+    background-color: #fef2f2;
+    border-color: #fecaca;
+    color: #b91c1c;
+}
+
+
+/* =========================================
+   INFORMAÇÃO AUXILIAR
+========================================= */
+
+.categoria-info {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+    margin-top: 18px;
+    padding: 14px 16px;
+
+    background-color: #eff6ff;
+
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+}
+
+.categoria-info i {
+    margin-top: 1px;
+
+    color: #315f9b;
+    font-size: 15px;
+
+    flex-shrink: 0;
+}
+
+.categoria-info p {
+    margin: 0;
+
+    color: #475569;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .categoria-container {
+        max-width: 100%;
+    }
+
+    .categoria-header {
+        margin-bottom: 21px;
+    }
+
+    .categoria-header h1 {
+        font-size: 21px;
+    }
+
+    .categoria-card-header {
+        padding: 18px;
+    }
+
+    .categoria-card-body {
+        padding: 22px 18px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .categoria-acoes {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .categoria-btn {
+        width: 100%;
+    }
+
+    .categoria-card-header {
+        gap: 11px;
+    }
+
+    .categoria-info {
+        padding: 12px;
+    }
+
+}
